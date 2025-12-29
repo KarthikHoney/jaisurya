@@ -59,7 +59,10 @@
 
     /* HERO */
     .hero{
-      background:var(--primary);
+      background:url('/assets/hero1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color:#fff;
       padding:100px 50px;
     }
@@ -186,6 +189,243 @@
     footer h4{
       color:var(--primary);
       margin-bottom:10px;
+    }
+
+    @media(max-width:768px){
+      header{
+        padding:14px 20px;
+        flex-direction:column;
+        gap:14px;
+      }
+
+      header h2{font-size:16px;}
+
+      nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:8px;
+      }
+
+      nav a{
+        margin:0 6px;
+        font-size:12px;
+      }
+
+      .btn{
+        padding:8px 14px;
+        font-size:12px;
+      }
+
+      .hero{
+        padding:60px 20px;
+        background-size:cover;
+      }
+
+      .hero h1{
+        font-size:28px;
+        max-width:100%;
+      }
+
+      .hero p{
+        max-width:100%;
+        font-size:14px;
+      }
+
+      .hero-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+      }
+
+      .stats{
+        grid-template-columns:repeat(2,1fr);
+        padding:30px 20px;
+        gap:15px;
+      }
+
+      .stat{
+        padding:20px;
+      }
+
+      .stat h3{
+        font-size:24px;
+      }
+
+      .stat p{
+        font-size:12px;
+      }
+
+      .section{
+        padding:40px 20px;
+      }
+
+      .section h2{
+        font-size:24px;
+      }
+
+      .section p{
+        max-width:100%;
+        font-size:14px;
+      }
+
+      .cards{
+        grid-template-columns:1fr;
+      }
+
+      .card{
+        padding:20px;
+      }
+
+      .card h4{
+        font-size:15px;
+      }
+
+      .card p{
+        font-size:13px;
+      }
+
+      .cta{
+        padding:40px 20px;
+      }
+
+      .cta h2{
+        font-size:24px;
+      }
+
+      .cta p{
+        max-width:100%;
+        font-size:14px;
+      }
+
+      .pdf-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+      }
+
+      footer{
+        padding:30px 20px;
+        font-size:12px;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+      }
+
+      footer h4{
+        font-size:14px;
+      }
+    }
+
+    @media(max-width:480px){
+      header{
+        padding:12px 15px;
+      }
+
+      header h2{font-size:14px;}
+
+      nav a{
+        font-size:11px;
+        margin:0 4px;
+      }
+
+      .btn{
+        padding:7px 12px;
+        font-size:11px;
+      }
+
+      .hero{
+        padding:40px 15px;
+      }
+
+      .hero h1{
+        font-size:22px;
+        margin-bottom:12px;
+      }
+
+      .hero p{
+        font-size:13px;
+        line-height:1.5;
+      }
+
+      .hero-buttons{
+        margin-top:20px;
+      }
+
+      .stats{
+        grid-template-columns:1fr;
+        padding:20px 15px;
+        gap:12px;
+      }
+
+      .stat{
+        padding:16px;
+      }
+
+      .stat h3{
+        font-size:20px;
+      }
+
+      .section{
+        padding:30px 15px;
+      }
+
+      .section h2{
+        font-size:20px;
+        margin-bottom:8px;
+      }
+
+      .section p{
+        font-size:13px;
+        margin-bottom:25px;
+      }
+
+      .card{
+        padding:16px;
+      }
+
+      .card h4{
+        font-size:14px;
+        margin-bottom:8px;
+      }
+
+      .card p{
+        font-size:12px;
+      }
+
+      .cta{
+        padding:30px 15px;
+      }
+
+      .cta h2{
+        font-size:20px;
+        margin-bottom:12px;
+      }
+
+      .cta p{
+        font-size:13px;
+      }
+
+      .pdf-links{
+        gap:8px;
+      }
+
+      footer{
+        padding:20px 15px;
+      }
+
+      footer h4{
+        font-size:13px;
+        margin-bottom:8px;
+      }
+
+      footer p{
+        font-size:11px;
+        margin:4px 0;
+      }
     }
   </style>
 </head>
