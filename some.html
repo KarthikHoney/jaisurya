@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jaisurya Staffing Services Pvt Ltd</title>
+
+  <style>
+    :root{
+      --primary:#2e7d54;
+      --accent:#a6baaf;
+      --light:#F5F5F5;
+      --danger:#d9261c;
+    }
+
+    body{
+      margin:0;
+      font-family:"Segoe UI", Arial, sans-serif;
+      background:var(--light);
+      color:#222;
+    }
+
+    a{text-decoration:none;color:inherit;}
+
+    /* HEADER */
+    header{
+      background:var(--light);
+      color:#fff;
+      padding:18px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h2{font-size:20px;color:var(--accent);}
+
+    nav a{
+      margin:0 14px;
+      font-size:14px;
+      color:var(--primary);
+    }
+
+    .btn{
+      padding:10px 18px;
+      border-radius:6px;
+      font-size:14px;
+      display:inline-block;
+    }
+
+    .btn-primary{
+      background:var(--accent);
+      color:#fff;
+    }
+
+    .btn-danger{
+      background:var(--danger);
+      color:#fff;
+    }
+
+    /* HERO */
+    .hero{
+      background:var(--primary);
+      color:#fff;
+      padding:100px 50px;
+    }
+
+    .hero h1{
+      font-size:46px;
+      max-width:700px;
+      margin-bottom:18px;
+    }
+
+    .hero p{
+      max-width:650px;
+      color:#d9e1ea;
+      line-height:1.6;
+    }
+
+    .hero-buttons{margin-top:30px;}
+
+    /* STATS */
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+      padding:50px;
+      background:#fff;
+      text-align:center;
+    }
+
+    .stat{
+      background:var(--light);
+      padding:25px;
+      border-radius:12px;
+    }
+
+    .stat h3{
+      color:var(--primary);
+      font-size:28px;
+      margin-bottom:5px;
+    }
+
+    .stat p{
+      font-size:13px;
+      color:#555;
+    }
+
+    /* SECTIONS */
+    .section{
+      padding:70px 50px;
+    }
+
+    .section h2{
+      font-size:32px;
+      color:var(--primary);
+      margin-bottom:10px;
+    }
+
+    .section p{
+      max-width:700px;
+      color:#555;
+      margin-bottom:40px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;
+      padding:25px;
+      border-radius:14px;
+      border-left:5px solid var(--accent);
+    }
+
+    .card h4{
+      margin-bottom:10px;
+      color:var(--primary);
+    }
+
+    .card p{
+      font-size:14px;
+      line-height:1.6;
+      color:#555;
+    }
+
+    /* CTA */
+    .cta{
+      background:linear-gradient(135deg,var(--accent),var(--primary));
+      color:#fff;
+      padding:70px 50px;
+      text-align:center;
+    }
+
+    .cta h2{
+      font-size:36px;
+      margin-bottom:15px;
+    }
+
+    .cta p{
+      max-width:700px;
+      margin:auto;
+      color:#f1f1f1;
+    }
+
+    .cta .btn{
+      margin:20px 10px 0;
+    }
+
+    /* FOOTER */
+    footer{
+      background:var(--light);
+      color:var(--primary);
+      padding:45px 50px;
+      font-size:13px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:30px;
+    }
+
+    footer h4{
+      color:var(--primary);
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+    <img src="/assets/jaisurya.png" alt="Jaisurya Staffing Logo" height="40"/>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Industries</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#" class="btn btn-danger">Get a Quote</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Building Reliable Workforce for Tomorrow</h1>
+  <p>
+    Jaisurya Staffing Services Pvt Ltd delivers contract staffing, recruitment,
+    and HR solutions across multiple industries since 2006.
+  </p>
+  <div class="hero-buttons">
+    <a href="#" class="btn btn-primary">View Services</a>
+    <a href="#" class="btn btn-danger">Contact Us</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><h3>18+</h3><p>Years of Experience</p></div>
+  <div class="stat"><h3>500+</h3><p>Corporate Clients</p></div>
+  <div class="stat"><h3>10,000+</h3><p>Candidates Placed</p></div>
+  <div class="stat"><h3>15+</h3><p>Industry Verticals</p></div>
+</section>
+
+<section class="section">
+  <h2>Our Staffing & HR Expertise</h2>
+  <p>End-to-end staffing and workforce solutions designed for business growth.</p>
+
+  <div class="cards">
+    <div class="card"><h4>Contract Staffing</h4><p>Flexible workforce solutions.</p></div>
+    <div class="card"><h4>Permanent Recruitment</h4><p>Right talent for the right role.</p></div>
+    <div class="card"><h4>Temporary Staffing</h4><p>Quick and reliable deployment.</p></div>
+    <div class="card"><h4>Statutory Compliance</h4><p>EPF, ESI, payroll & labor laws.</p></div>
+    <div class="card"><h4>Document Digitization</h4><p>Secure document management.</p></div>
+    <div class="card"><h4>Admin & Accounts Support</h4><p>MIS, PMO & back-office staffing.</p></div>
+  </div>
+</section>
+
+<section class="cta">
+ <!-- download pdf section  -->
+    <h2>Download our PDF</h2>
+    <p>Explore our services and expertise in detail.</p>
+    <!-- three pdf files -->
+    <div class="pdf-links">
+      <a href="#" class="btn btn-primary">EPF Form 19</a>
+      <a href="#" class="btn btn-primary">EPF Form 10C </a>
+      <a href="#" class="btn btn-primary">EPF Form  13</a>
+    </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Jaisurya Staffing</h4>
+      <p>Reliable workforce solutions since 2006.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p>About Us</p>
+      <p>Services</p>
+      <p>Industries</p>
+      <p>Careers</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Mumbai, India</p>
+      <p>+91 98765 43210</p>
+      <p>contact@jaisurya.in</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
